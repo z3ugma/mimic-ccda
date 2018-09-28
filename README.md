@@ -2,13 +2,14 @@
 
 This repository contains an Extract-Transform-Load (ETL) process for mapping the [MIMIC-III database](mimic.physionet.org) to the [FHIR](https://www.hl7.org/fhir). This process involves both transforming the structure of the database (i.e. the relational schema), but also standardizing the many concepts in the MIMIC-III database to a standard vocabulary.
 
-# "WHERE IS ..."
+# Table of Contents
 
-Below in the README, we provide two sections. The first section, _FHIR Resources_, lists the FHIR resources which have been populated from MIMIC-III. You can use this section to figure out what data generated each FHIR Resources. For example, we can see that the FHIR Resource _patient_ was populated using data from the _patients_ table in MIMIC-III.
-
-The second section, _MIMIC TABLES EQUIVALENCE_, lists all the tables in MIMIC-III, and shows where the data now exists in the FHIR Resources. For example, we can see that the MIMIC-III table _patients_ was used to populate the FHIR Resources _patient_.
+- FHIR Resources
+- MIMIC TABLES EQUIVALENCE
 
 # FHIR Resources
+
+This section lists the FHIR resources which have been populated from MIMIC-III. You can use this section to figure out what data generated each FHIR Resources. For example, we can see that the FHIR Resource _patient_ was populated using data from the _patients_ table in MIMIC-III.
 
 Currently supported FHIR Resources:
 
@@ -26,6 +27,8 @@ Currently supported FHIR Resources:
 - Claim
 
 # MIMIC TABLES EQUIVALENCE
+
+This section lists all the tables in MIMIC-III, and shows where the data now exists in the FHIR Resources. For example, we can see that the MIMIC-III table _patients_ was used to populate the FHIR Resources _patient_.
 
 TBD
 
