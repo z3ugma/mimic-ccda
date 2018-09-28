@@ -1,0 +1,18 @@
+extras/loinc/loinc.csv
+extras/loinc/map_to.csv
+extras/loinc/source_organization.csv
+extras/loinc/Oracle/*
+extras/loinc/MySql/*
+extras/private/*
+extras/loinc/Loinc_2.64_Text_2.64.zip
+extras/rxnorm/RxNorm_full_prescribe_09042018.zip
+extras/umls/hins2018_v4.0.csv
+etl/Result/
+etl.log
+bk/
+
+# OSX .DS_Store file
+.DS_Store
+
+# virtualenv
+venv/
