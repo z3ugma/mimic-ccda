@@ -23,6 +23,7 @@ if [ ! "$(docker ps -q -f name=fhir)" ]; then
         # cleanup
         docker rm fhir
     fi
+    echo 'Create docker for fhir'
     # run your container
     docker run \
     --name fhir \
