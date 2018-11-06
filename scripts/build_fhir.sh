@@ -6,8 +6,6 @@ DBPASS='fhir'
 
 MIMIC_DATA="${PWD}/mimic/data"
 MIMIC_SCHEMA="${PWD}/mimic/build-mimic"
-# MIMIC_DOCKER="${PWD}/mimic/docker"
-# MIMIC_DB_DIR="${PWD}/mimic/mariadb"
 FHIR_DATA="${PWD}/fhir/data"
 FHIR_SCHEMA="${PWD}/fhir/build-fhir"
 
@@ -46,5 +44,5 @@ echo 'Done!'
 
 
 DOCKER_IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' $DBNAME)
+# cat $MIMIC_SCHEMA/*.sql | mysql -u $DBUSER -p$DBPASS -h $DOCKER_IP
 cat $FHIR_SCHEMA/*.sql | mysql -u $DBUSER -p$DBPASS -h $DOCKER_IP
-cat $MIMIC_SCHEMA/*.sql | mysql -u $DBUSER -p$DBPASS -h $DOCKER_IP

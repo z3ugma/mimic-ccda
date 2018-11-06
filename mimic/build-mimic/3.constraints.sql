@@ -5,7 +5,7 @@
 -- ----------------------------------------------------------------
 
 -- The below command defines the schema where the data should reside
-use mimiciiiv12;
+use mimic;
 tee 3-constraints.log
 
 -- Restoring the search path to its default value can be accomplished as follows:

@@ -10,6 +10,7 @@ extras/umls/hins2018_v4.0.csv
 etl/Result/
 etl.log
 bk/
+2-index.log
 
 # OSX .DS_Store file
 .DS_Store
